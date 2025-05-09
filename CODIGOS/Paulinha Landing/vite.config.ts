@@ -8,5 +8,13 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    rollupOptions: {
+      external: ['framer-motion'],
+      output: {
+        globals: {
+          'framer-motion': 'framerMotion'
+        }
+      }
+    }
   },
 });
