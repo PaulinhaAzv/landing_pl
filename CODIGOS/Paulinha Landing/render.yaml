@@ -3,7 +3,6 @@ services:
     name: paulinha-landing
     runtime: node
     rootDir: .
-    env: production
     buildCommand: |
       echo "Node version: $(node -v)"
       echo "NPM version: $(npm -v)"
@@ -12,7 +11,7 @@ services:
       ls -la
       echo "Verificando package.json:"
       cat package.json
-      npm ci
+      npm install --no-audit --no-fund
       npm run build
     startCommand: npm run start
     envVars:
