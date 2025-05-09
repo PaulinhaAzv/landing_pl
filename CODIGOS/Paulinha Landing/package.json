@@ -9,11 +9,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "start": "vite preview",
+    "lint": "eslint .",
     "test": "vitest run",
-    "test:ui": "vitest --ui",
-    "start": "serve -s dist"
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
