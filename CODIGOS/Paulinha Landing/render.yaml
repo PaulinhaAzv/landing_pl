@@ -3,15 +3,13 @@ services:
     name: paulinha-landing
     runtime: node
     buildCommand: |
-      mkdir -p /opt/render/project/src
-      cp -r * /opt/render/project/src/
-      cp -r .* /opt/render/project/src/ 2>/dev/null || true
-      cd /opt/render/project/src
-      echo "Conteúdo do diretório src:"
+      echo "Diretório atual: $(pwd)"
+      echo "Conteúdo do diretório:"
       ls -la
-      npm install --no-audit --no-fund
+      npm config set prefix /opt/render/project/src
+      npm install
       npm run build
-    startCommand: cd /opt/render/project/src && npm run start
+    startCommand: npm run start
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
