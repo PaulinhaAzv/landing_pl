@@ -1,6 +1,7 @@
+import React from 'react';
 import PlanosSection from "./PlanosSection";
 
-export default function HeroSection() {
+const HeroSection: React.FC = () => {
   return (
     <>
       <section className="relative min-h-[90vh] flex items-center justify-center text-center bg-black overflow-hidden">
@@ -36,4 +37,6 @@ export default function HeroSection() {
       <PlanosSection />
     </>
   );
-}
+};
+
+export default HeroSection; 

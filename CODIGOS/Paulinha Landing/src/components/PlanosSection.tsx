@@ -1,4 +1,6 @@
-export default function PlanosSection() {
+import React from 'react';
+
+const PlanosSection: React.FC = () => {
   return (
     <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto px-4 mt-16" id="planos">
       {/* Plano Básico */}
@@ -35,4 +37,6 @@ export default function PlanosSection() {
       </div>
     </div>
   );
-}
+};
+
+export default PlanosSection; 

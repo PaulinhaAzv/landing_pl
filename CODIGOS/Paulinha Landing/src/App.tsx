@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import HeroSection from './components/HeroSection';
 import About from './components/About';
-import Pricing from './components/Pricing';
 import Telegram from './components/Telegram';
 import Footer from './components/Footer';
 import Terms from './components/Terms';
@@ -13,9 +12,8 @@ function MainLayout() {
   return (
     <div className="min-h-screen flex flex-col bg-black text-white font-[Montserrat]">
       <Header />
-      <Hero />
+      <HeroSection />
       <About />
-      <Pricing />
       <Telegram />
       <Footer />
     </div>

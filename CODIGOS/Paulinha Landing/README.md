@@ -1,28 +1,62 @@
-# Paulinha Landing
+# Paulinha Landing Page
 
-Landing page exclusiva para divulgação de conteúdo artístico +18 de Paulinha Az., com foco em elegância, sensualidade e experiência visual marcante. Desenvolvida em React + Vite + Tailwind CSS.
+Landing page moderna e responsiva para conteúdo exclusivo.
 
-## ✨ Demonstração
+## 🚀 Tecnologias
 
-![Screenshot da Landing](https://res.cloudinary.com/dt9m3pkjv/image/upload/v1743376990/PAULA/ucp0ckwei35porpa00a9.png)
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Vitest + Testing Library
+- Lucide React Icons
 
-## 🚀 Funcionalidades
+## 📦 Instalação
 
-- Hero Section com imagem de fundo, overlay degradê e chamada para ação.
-- Seção "Quem é Paulinha?" apresentando a artista.
-- Planos de assinatura com destaque visual, efeitos neon e links de pagamento.
-- Chamada para contato direto via Telegram.
-- Rodapé com links para Termos de Uso e Política de Privacidade.
-- Responsivo e com animações sutis.
-- SEO básico e metatags para redes sociais.
+```bash
+# Clone o repositório
+git clone [URL_DO_REPOSITÓRIO]
 
-## 🛠️ Tecnologias Utilizadas
+# Entre na pasta do projeto
+cd paulinha-landing
 
-- [React 18](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [React Router DOM](https://reactrouter.com/)
-- [Lucide React Icons](https://lucide.dev/icons/)
+# Instale as dependências
+npm install
+```
+
+## 🛠️ Desenvolvimento
+
+```bash
+# Inicie o servidor de desenvolvimento
+npm run dev
+
+# Execute os testes
+npm test
+
+# Execute os testes com interface visual
+npm run test:ui
+```
+
+## 🏗️ Build
+
+```bash
+# Gere a build de produção
+npm run build
+
+# Visualize a build localmente
+npm run preview
+```
+
+## ✨ Funcionalidades
+
+- Hero Section com imagem de fundo, overlay degradê e chamada para ação
+- Seção "Quem é Paulinha?" apresentando a artista
+- Planos de assinatura com destaque visual e efeitos neon
+- Chamada para contato direto via Telegram
+- Rodapé com links para Termos de Uso e Política de Privacidade
+- Responsivo e com animações sutis
+- SEO básico e metatags para redes sociais
 
 ## 📁 Estrutura de Pastas
 
@@ -31,9 +65,9 @@ Paulinha Landing/
 ├── src/
 │   ├── components/
 │   │   ├── Header.tsx
-│   │   ├── Hero.tsx
+│   │   ├── HeroSection.tsx
 │   │   ├── About.tsx
-│   │   ├── Pricing.tsx
+│   │   ├── PlanosSection.tsx
 │   │   ├── Telegram.tsx
 │   │   ├── Footer.tsx
 │   │   ├── Terms.tsx
@@ -46,63 +80,43 @@ Paulinha Landing/
 └── ...
 ```
 
-## ⚡ Instalação e Uso
+## 🧪 Testes
 
-1. **Clone o repositório:**
-   ```
-   bash
-   git clone https://github.com/seu-usuario/paulinha-landing.git
-   cd paulinha-landing
-   ```
+O projeto usa Vitest e React Testing Library para testes automatizados:
 
-2. **Instale as dependências:**
-   ```bash
-   npm install
-   ```
+- Testes de renderização de componentes
+- Verificação de textos e elementos
+- Validação de links e navegação
+- Testes de responsividade
+- Cobertura dos principais componentes
 
-3. **Rode o projeto em modo desenvolvimento:**
-   ```bash
-   npm run dev
-   ```
+## 📱 Responsividade
 
-4. **Build para produção:**
-   ```bash
-   npm run build
-   ```
+- Design mobile-first
+- Breakpoints otimizados
+- Imagens responsivas
+- Layout adaptativo
 
-5. **Preview do build:**
-   ```bash
-   npm run preview
-   ```
+## 🔒 Segurança
+
+- Links de pagamento seguros
+- Proteção de conteúdo
+- Termos de uso e privacidade
+- Links externos com `rel="noopener noreferrer"`
+- Sem coleta de dados sensíveis no front-end
 
 ## 🌐 Deploy
 
 O projeto pode ser facilmente hospedado no Vercel, Netlify, GitHub Pages ou qualquer serviço que suporte aplicações estáticas.
 
-## 🔒 Segurança e Privacidade
-
-- Todos os links externos abrem em nova aba com `rel="noopener noreferrer"`.
-- Não há coleta de dados sensíveis no front-end.
-- Consulte a [Política de Privacidade](https://paulaazevedo.site/privacidade) para detalhes.
-
-## 🧪 Testes
-
-- O projeto não possui testes automatizados, mas recomenda-se testar:
-  - Renderização dos componentes principais.
-  - Responsividade em diferentes dispositivos.
-  - Funcionamento dos links de pagamento e Telegram.
-  - Acessibilidade (alt das imagens, contraste, navegação por teclado).
-
-## 📄 Licença
-
-Este projeto é artístico e de uso restrito. Não copie, distribua ou utilize sem autorização.
-
 ## 📬 Contato
 
 Dúvidas ou parcerias: [contato@paulaazevedo.com](mailto:contato@paulaazevedo.com)
 
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 ---
 
 > **Atenção:** Conteúdo +18. Proibido para menores de idade.
-
-```
