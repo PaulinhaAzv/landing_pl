@@ -1,10 +1,9 @@
 services:
   - type: web
     name: paulinha-landing
-    env: node
-    rootDir: .
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
+    runtime: node
+    buildCommand: cd /opt/render/project/src && npm install && npm run build
+    startCommand: cd /opt/render/project/src && npm run start
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
