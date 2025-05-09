@@ -2,6 +2,7 @@ services:
   - type: web
     name: paulinha-landing
     runtime: node
+    rootDir: .
     env: production
     buildCommand: |
       echo "Node version: $(node -v)"
@@ -9,6 +10,8 @@ services:
       echo "Diretório atual: $(pwd)"
       echo "Conteúdo do diretório:"
       ls -la
+      echo "Verificando package.json:"
+      cat package.json
       npm ci
       npm run build
     startCommand: npm run start
