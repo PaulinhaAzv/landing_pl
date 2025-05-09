@@ -2,12 +2,10 @@ services:
   - type: web
     name: paulinha-landing
     runtime: node
-    rootDir: .
     buildCommand: |
-      echo "Diretório atual: $(pwd)"
-      echo "Conteúdo do diretório:"
-      ls -la
-      npm install
+      chmod -R 755 .
+      npm cache clean --force
+      npm install --no-audit --no-fund
       npm run build
     startCommand: npm run start
     envVars:
