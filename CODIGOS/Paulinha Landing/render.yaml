@@ -2,16 +2,20 @@ services:
   - type: web
     name: paulinha-landing
     runtime: node
+    env: production
     buildCommand: |
+      echo "Node version: $(node -v)"
+      echo "NPM version: $(npm -v)"
       echo "Diretório atual: $(pwd)"
       echo "Conteúdo do diretório:"
       ls -la
-      npm config set prefix /opt/render/project/src
-      npm install
+      npm ci
       npm run build
     startCommand: npm run start
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
+      - key: NODE_ENV
+        value: production
     healthCheckPath: /
     autoDeploy: true 
