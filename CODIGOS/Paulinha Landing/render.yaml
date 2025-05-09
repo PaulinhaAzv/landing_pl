@@ -2,7 +2,6 @@ services:
   - type: web
     name: paulinha-landing
     runtime: node
-    rootDir: .
     buildCommand: |
       echo "Node version: $(node -v)"
       echo "NPM version: $(npm -v)"
