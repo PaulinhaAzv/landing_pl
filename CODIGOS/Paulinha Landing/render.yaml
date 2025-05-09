@@ -3,11 +3,13 @@ services:
     name: paulinha-landing
     runtime: node
     buildCommand: |
-      chmod -R 755 .
-      npm cache clean --force
+      mkdir -p /opt/render/project/src
+      cp package.json /opt/render/project/src/
+      cp package-lock.json /opt/render/project/src/
+      cd /opt/render/project/src
       npm install --no-audit --no-fund
       npm run build
-    startCommand: npm run start
+    startCommand: cd /opt/render/project/src && npm run start
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
