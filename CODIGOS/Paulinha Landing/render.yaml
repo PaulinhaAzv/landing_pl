@@ -4,9 +4,11 @@ services:
     runtime: node
     buildCommand: |
       mkdir -p /opt/render/project/src
-      cp package.json /opt/render/project/src/
-      cp package-lock.json /opt/render/project/src/
+      cp -r * /opt/render/project/src/
+      cp -r .* /opt/render/project/src/ 2>/dev/null || true
       cd /opt/render/project/src
+      echo "Conteúdo do diretório src:"
+      ls -la
       npm install --no-audit --no-fund
       npm run build
     startCommand: cd /opt/render/project/src && npm run start
