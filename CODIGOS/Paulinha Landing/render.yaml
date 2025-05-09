@@ -2,7 +2,13 @@ services:
   - type: web
     name: paulinha-landing
     runtime: node
-    buildCommand: npm install && npm run build
+    rootDir: .
+    buildCommand: |
+      echo "Diretório atual: $(pwd)"
+      echo "Conteúdo do diretório:"
+      ls -la
+      npm install
+      npm run build
     startCommand: npm run start
     envVars:
       - key: NODE_VERSION
