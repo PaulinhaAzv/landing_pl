@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-import { AboutSection } from './components/AboutSection';
+import About from './components/About';
 import Telegram from './components/Telegram';
 import Footer from './components/Footer';
 import Terms from './components/Terms';
@@ -13,7 +13,7 @@ function MainLayout() {
     <div className="min-h-screen flex flex-col bg-black text-white font-[Montserrat]">
       <Header />
       <HeroSection />
-      <AboutSection />
+      <About />
       <Telegram />
       <Footer />
     </div>
