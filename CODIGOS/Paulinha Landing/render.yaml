@@ -2,7 +2,7 @@ services:
   - type: web
     name: paulinha-landing
     runtime: node
-    buildCommand: cd /opt/render/project/src && npm install && npm run build
+    buildCommand: chmod +x build.sh && ./build.sh
     startCommand: cd /opt/render/project/src && npm run start
     envVars:
       - key: NODE_VERSION
